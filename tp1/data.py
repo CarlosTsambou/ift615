@@ -1,6 +1,6 @@
 import math
 
-
+# Graph
 graph = {
 
     "Oradea": {
@@ -118,9 +118,7 @@ graph = {
     }
 } 
 
-
-
-
+#heuristic
 coords = {
     "Oradea": (200, 40),
     "Zerind": (180, 80),
@@ -145,7 +143,7 @@ coords = {
 }
 
 
-
+#heuristic function
 def heuristic(city, goal):
     x1, y1 = coords[city]
     x2, y2 = coords[goal]
@@ -154,4 +152,3 @@ def heuristic(city, goal):
         (x1 - x2)**2 +
         (y1 - y2)**2
     )
-
